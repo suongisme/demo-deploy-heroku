@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+    
+    font-size: 10px;
+	text-decoration: none;
+    color: white;
+    font-family: "Baloo", Helvetica, Arial, sans-serif;
+	
+    box-sizing: border-box;
+    
+    scroll-behavior: smooth ;
+}
+
+:root {
+    --brown-color-primary: #d3b673;
+}
+
+.products {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__menu {
+	width: 20%;
+}
+
+.menu__heading {
+    color: var(--brown-color-primary);
+    font-size: 3.5rem;
+    line-height: 54px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.list__category {
+    list-style: none;
+    line-height: 2.56;
+}
+
+.category__text {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 800;
+}
+
+.products__list {
+    flex: 1;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    margin-left: 100px;
+}
+
+.products__list>div:first-child~div {
+	margin-top: 30px;
+}
+
+.list__heading {
+    color: #282828;
+    font-size: 3.5rem;
+    line-height: 54px;
+    font-family: 'Baloo 2', cursive;
+    margin-left: 10px;
+}
+
+.list__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.list__product {
+    width: 30%;
+    min-height: 280px;
+    position: relative;
+    margin: 20px 0px;
+    margin-left: 20px;   
+    border-bottom: 3px solid #e3e3e3    ;
+    padding: 10px; 
+}
+
+.list__product:hover {
+    box-shadow: 0.5px 4px 10px 1px #ccc;
+}
+
+.product__sale {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 35px;
+    line-height: 35px;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    color: var(--brown-color-primary);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.product__img img {
+    width: 100%;
+    transition: all linear 1s;
+}
+
+.products__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 140px;
+    justify-content: space-around;
+}
+
+.product-info__name {
+    color: black;
+    font-size: 2rem;
+}
+
+.product-info__price {
+    color: var(--brown-color-primary);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.product-info__btn {
+    width: 49%;
+    font-size: 1.6rem;
+    padding: 5px 0;
+	color: var(--brown-color-primary);
+    background-color: white;
+    border: 1px solid var(--brown-color-primary);
+    text-align: center;
+}
+
+.product-info__btn--primary {
+    background-color: var(--brown-color-primary);
+	color: white;
+}
