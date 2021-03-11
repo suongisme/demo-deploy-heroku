@@ -58,7 +58,6 @@
 
 	<dependencies>
 	
-		<!-- https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner -->
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
 		<dependency>
 		    <groupId>org.apache.tomcat</groupId>

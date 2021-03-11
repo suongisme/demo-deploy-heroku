@@ -14,6 +14,13 @@
 		<servlet-name>product</servlet-name>
 		<url-pattern>/product/*</url-pattern>
 	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>1440</session-timeout>
+		<cookie-config>
+			<max-age>86400</max-age>
+		</cookie-config>
+	</session-config>
 
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
