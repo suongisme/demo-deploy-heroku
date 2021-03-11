@@ -12,7 +12,6 @@ import suongnguyen.tocotoco.dao.ProductDAO;
 import suongnguyen.tocotoco.model.Category;
 import suongnguyen.tocotoco.model.Product;
 
-@WebServlet("/product/*")
 public class ProductController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
