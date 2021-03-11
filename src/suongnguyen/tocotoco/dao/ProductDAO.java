@@ -8,10 +8,10 @@ import suongnguyen.tocotoco.model.Product;
 import suongnguyen.tocotoco.utilities.JDBCHelper;
 
 public class ProductDAO {
-	private final String INSERT = "INSERT INTO products(name, price, image, description, sale, categoryId) VALUES(?,?,?,?,?,?)";
-	private final String SELECT_ALL = "SELECT * FROM products";
-	private final String SELECT_BY_CATEGORYID = "SELECT * FROM products where categoryId = ?";
-	private final String SELECT_BY_ID = "SELECT * FROM products where id = ?";
+	private final String INSERT = "INSERT INTO product(name, price, image, description, sale, categoryId) VALUES(?,?,?,?,?,?)";
+	private final String SELECT_ALL = "SELECT * FROM product";
+	private final String SELECT_BY_CATEGORYID = "SELECT * FROM product where categoryId = ?";
+	private final String SELECT_BY_ID = "SELECT * FROM product where id = ?";
 	
 	public void insert(Product product) {
 		try {

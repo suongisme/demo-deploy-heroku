@@ -9,9 +9,9 @@ import java.sql.SQLException;
 public class JDBCHelper {
 	
 	private static Connection con;
-	private static final String URL = "jdbc:postgresql://ec2-54-164-22-242.compute-1.amazonaws.com:5432/d96rdh9u1hmqhm";
-	private static final String USER_NAME = "sozmlskccxtyhy";
-	private static final String PASSWORD = "5946c667114d77415a265f4efb10fb68dce56f7829b70053debf285f239b2c5f";
+	private static final String URL = "jdbc:postgresql://ec2-54-145-102-149.compute-1.amazonaws.com:5432/dcs7di6la9nisr";
+	private static final String USER_NAME = "getsfowhidexef";
+	private static final String PASSWORD = "98b14d755da40ee5cdb651bbf77d9bb7d76326ee0accd9ffcb1cefa5a6698c1f";
 	private static final String DRIVER = "org.postgresql.Driver";
 	
 	public static void openConnection() {
@@ -48,6 +48,15 @@ public class JDBCHelper {
 	public static void closeConnection() {
 		try {
 			con.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		try {
+			openConnection();
+			System.out.println("DONE");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
