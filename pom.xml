@@ -10,7 +10,7 @@
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
-	            <groupId>org.apache.maven.plugins</groupId>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 				<configuration>
@@ -29,29 +29,31 @@
 				<groupId>com.heroku.sdk</groupId>
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>3.0.3</version>
-			</plugin>
-		</plugins>
+			</plugin>	
+		</plugins>		
 	</build>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner -->
+		<dependency>
+		    <groupId>com.github.jsimone</groupId>
+		    <artifactId>webapp-runner</artifactId>
+		    <version>9.0.27.1</version>
+		    <scope>provided</scope>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>42.2.18</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
-		<dependency>
-		    <groupId>org.apache.tomcat</groupId>
-		    <artifactId>tomcat-catalina</artifactId>
-		    <version>9.0.41</version>
-		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
 		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 		<dependency>
-		    <groupId>javax.servlet</groupId>
-		    <artifactId>jstl</artifactId>
-		    <version>1.2</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 	</dependencies>
 
