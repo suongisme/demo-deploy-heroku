@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="suong nguhen">click me</a>
+	<a href="${pageContext.request.contextPath}/product">click me</a>
 </body>
 </html>
