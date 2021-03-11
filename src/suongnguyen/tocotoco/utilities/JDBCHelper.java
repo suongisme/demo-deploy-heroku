@@ -18,6 +18,7 @@ public class JDBCHelper {
 		try {
 			Class.forName(DRIVER);
 			con = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
+			con.setAutoCommit(false);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

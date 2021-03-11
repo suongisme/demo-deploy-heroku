@@ -11,13 +11,17 @@ const cart = document.querySelector('.cart__items');
 const exit_order = document.querySelector(".order__background");
 const cart_items = document.querySelector(".cart__items");
 
+const host = window.location.host
+const protocol = window.location.protocol
+
 function addEvent() {
 	for (let i = 0; i < allAmount.length; i++) {
 		allBtnAdd[i].addEventListener('click', function(event) {
+			
 			const id = allBtnAdd[i].id;
 			allAmount[i].textContent = parseInt(allAmount[i].textContent) + 1;
 
-			xml.open('GET', `http://localhost:8080/clone-tocotoco/cart/add?id=${id}`, true);
+			xml.open('GET', `${protocol}//${host}/clone-tocotoco/cart/add?id=${id}`, true);
 			xml.send();
 		})
 
@@ -34,7 +38,7 @@ function addEvent() {
 				cart.innerHTML = `<p class='items__status'>Bạn chưa chọn sản phẩm nào!</p>`
 			}
 
-			xml.open('GET', `http://localhost:8080/clone-tocotoco/cart/subtract?id=${id}`, true);
+			xml.open('GET', `${protocol}//${host}/clone-tocotoco/cart/subtract?id=${id}`, true);
 			xml.send();
 		})
 	}

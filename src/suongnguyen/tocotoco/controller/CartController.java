@@ -99,7 +99,6 @@ public class CartController extends HttpServlet {
 	
 	public void addItem(HttpServletRequest request) {
 		HttpSession session = request.getSession();
-		System.out.println(session.getId());
 		List<Item> itemList = (List<Item>) session.getAttribute("carts");
 		int productID = Integer.parseInt(request.getParameter("id"));
 		Product product = productDao.getById(productID);
