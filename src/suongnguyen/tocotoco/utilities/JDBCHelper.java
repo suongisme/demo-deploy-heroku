@@ -16,6 +16,7 @@ public class JDBCHelper {
 	
 	public static void openConnection() {
 		try {
+			System.out.println(System.getenv("JDBC_DATABASE_URL"));
 			Class.forName(DRIVER);
 			con = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
 			con.setAutoCommit(false);
