@@ -9,15 +9,13 @@ import java.sql.SQLException;
 public class JDBCHelper {
 	
 	private static Connection con;
-	private static final String URL = "jdbc:postgresql://ec2-54-145-102-149.compute-1.amazonaws.com:5432/dcs7di6la9nisr";
-	private static final String USER_NAME = "getsfowhidexef";
-	private static final String PASSWORD = "98b14d755da40ee5cdb651bbf77d9bb7d76326ee0accd9ffcb1cefa5a6698c1f";
 	private static final String DRIVER = "org.postgresql.Driver";
 	
 	public static void openConnection() {
 		try {
+			String infoDB = System.getenv("JDBC_DATABASE_URL");
 			Class.forName(DRIVER);
-			con = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
+			con = DriverManager.getConnection(infoDB);
 			con.setAutoCommit(false);
 		} catch (Exception e) {
 			e.printStackTrace();
