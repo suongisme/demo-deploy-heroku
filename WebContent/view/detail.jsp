@@ -6,6 +6,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${pageContext.request.contextPath }/css/detail.css">
 <title>Insert title here</title>
 </head>
