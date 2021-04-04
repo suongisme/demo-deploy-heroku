@@ -9,7 +9,7 @@
 <div class="footer">
         <div class="footer__top">
             <div class="footer__logo">
-                <img src="http://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/ft_logo.webp" alt="">
+                <img src="${ pageContext.request.contextPath}/image/ft_logo.webp" alt="">
             </div>
             <div class="footer__menu menu--large">
                 <div class="menu__title">
@@ -36,9 +36,9 @@
                     <i class="fab fa-google-plus" aria-hidden="true"></i>
                 </div>
                 <div class="menu__download">
-                    <img src="http://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/Googleplay.webp" alt="">
-                    <img src="http://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/Appstore.webp" alt="">
-                    <img src="http://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/bo_cong_thuong_grande.webp" alt="">
+                    <img src="${ pageContext.request.contextPath}/image/ggplay.webp" alt="">
+                    <img src="${ pageContext.request.contextPath}/image/appstore.webp" alt="">
+                    <img src="${ pageContext.request.contextPath}/image/license.webp" alt="">
                 </div>
                 
             </div>
