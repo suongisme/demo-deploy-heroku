@@ -8,6 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<c:redirect url="${pageContext.request.contextPath}/product">
+<c:redirect url="${pageContext.request.contextPath}/product"/>
 </body>
 </html>
