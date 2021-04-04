@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="header">
-		<img class="header__logo" alt="Logo" src="https://order.tocotocotea.com/assets/imgs/logo.png">
+		<img class="header__logo" alt="Logo" src="http://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/logo.png">
 		<div class="header__search">
 			<img class="search__icon" src="../image/search.png" alt="search-icon"> 
 			<input class="search__text" type="text" placeholder="Tìm kiếm sản phẩm">
@@ -110,7 +110,7 @@
 			</div>
 			<div class="cart__pay">
 				<div class="pay__info">
-					<img class="info__img" alt="cup" src="https://order.tocotocotea.com/assets/icons/icon-glass-tea.png">	
+					<img class="info__img" alt="cup" src="http://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/icon-glass-tea.png">	
 					<span class="info__cal"> 
 						x ${total_amount eq null ? 0 : total_amount} = 
 						<fmt:formatNumber var="_total" 
