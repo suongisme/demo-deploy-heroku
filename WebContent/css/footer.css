@@ -1,0 +1,77 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(0, rgba(0,0,0,.8), rgba(0,0,0,.8)), url(http://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/ft_bg_img.png);
+    background-size: cover;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.footer__top {
+    display: flex;
+}
+
+.footer__logo {
+    flex-basis: 25%;
+}
+
+.footer__logo > img {
+    width: 100%;
+    float: right;
+}
+
+.footer__menu{
+    flex-basis: 15%;
+    margin-left: 30px;
+}
+
+.menu__title {
+    margin-bottom: 30px;
+    color: var(--brown-color-primary);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+}
+
+.menu__line {
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+.menu--large {
+    flex-basis: 36%;
+}
+
+.fab {
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.menu__download {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu__download > img {
+    width: 49%;
+    margin-top: 10px;
+}
+
+.footer__bottom {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom > p {
+	font-size: 1.5rem;
+}
