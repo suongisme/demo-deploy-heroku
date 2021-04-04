@@ -1,3 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+    
+    font-size: 10px;
+	text-decoration: none;
+    color: white;
+    font-family: "Baloo", Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --brown-color-primary: #d3b673;
+}
+
 .product {
 	display: flex;
 	max-width: 900px;
@@ -26,7 +40,7 @@
 }
 
 .info__price {
-	color: #d3b673;
+	color: var(--brown-color-primary);
 	font-size: 2.5rem;
 	font-weight: bold;
 }
@@ -34,7 +48,7 @@
 .info__btn {
 	color: white;
 	line-height: 30px;
-	background-color: #d3b673;
+	background-color: var(--brown-color-primary);
 	padding: 5px 20px;
 	border-radius: 20px;
 }
