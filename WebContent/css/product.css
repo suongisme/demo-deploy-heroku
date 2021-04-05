@@ -102,6 +102,12 @@
     font-weight: bold;
 }
 
+.product__img {
+    display: inline-block;
+    min-height: 206px;
+    width: 100%;	
+}
+
 .product__img img {
     width: 100%;
     transition: all linear 1s;
