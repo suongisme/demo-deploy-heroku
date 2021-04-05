@@ -143,6 +143,7 @@
 
 .product__img {
     width: 100%;
+    min-height: 154px;
 }
 
 .list-products__product > div {
