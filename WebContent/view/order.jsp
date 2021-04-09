@@ -126,7 +126,7 @@
 		</div>
 		<c:set var="product" value="${product}" />
 		<c:if test="${product ne null}">
-			<form action="/clone-tocotoco/cart/add" method="POST" class="order" accept-charset="utf-8">
+			<form action="${ pageContext.request.contextPath }/cart/add" method="POST" class="order" accept-charset="utf-8">
 				<div class="order__background"></div>
 				<div class="order__product-form">
 					<input hidden="hidden" value="${product.getId()}" name="id">
